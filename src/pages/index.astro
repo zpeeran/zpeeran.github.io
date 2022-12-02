@@ -58,6 +58,27 @@ import Card from "../components/Card.astro";
     }
 
     .aside {
+        color: gray;
         font-size: 22px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 640px) {
+        .intro {
+            height: calc(100vh - 53px);
+            margin: 0px 10px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+        }
+        .intro-paragraph {
+            font-size: 30px;
+            width: 100vw;
+            padding-bottom: 30px;
+        }
+        .intro-aside {
+            width: 100vw;
+        }
     }
 </style>
