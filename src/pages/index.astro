@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Intro from "../layouts/Intro.astro";
 import Card from "../components/Card.astro";
 ---
 
@@ -11,74 +12,7 @@ import Card from "../components/Card.astro";
             body="Learn how Astro works and explore the official API docs."
         />
     </main> -->
-    <div class="intro">
-        <div class="intro-paragraph">
-            My name is Zafar Peeran, <br /> I'm a <i>digital artist</i> working and
-            living in Los Angeles.
-        </div>
-        <div class="intro-aside">
-            <div class="aside">
-                I want to help brands create memorable experiences through
-                expressive design.
-            </div>
-            <div>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                    >LinkedIn</a
-                >
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                    >Mail</a
-                >
-            </div>
-        </div>
-    </div>
+    <Intro />
 </Layout>
 
-<style>
-    .intro {
-        margin: 0px 40px;
-        height: calc(100vh - 67px);
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        box-sizing: border-box;
-        padding-bottom: 50px;
-    }
-
-    .intro-paragraph {
-        font-size: 62px;
-        width: 44vw;
-    }
-
-    .intro-aside {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        font-size: 22px;
-        width: 30vw;
-    }
-
-    .aside {
-        color: gray;
-        font-size: 22px;
-        padding-bottom: 30px;
-    }
-
-    @media (max-width: 640px) {
-        .intro {
-            height: calc(100vh - 53px);
-            margin: 0px 10px;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            align-items: center;
-            flex-direction: column;
-        }
-        .intro-paragraph {
-            font-size: 30px;
-            width: 100vw;
-            padding-bottom: 30px;
-        }
-        .intro-aside {
-            width: 100vw;
-        }
-    }
-</style>
+<style></style>
