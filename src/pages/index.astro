@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Intro from "../layouts/Intro.astro";
+import Footer from "../layouts/Footer.astro";
 import Card from "../components/Card.astro";
 ---
 
@@ -25,7 +26,32 @@ import Card from "../components/Card.astro";
             body="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
             image="/temp-images/gradient3.jpg"
         />
+        <div class="message">
+            Let's get to know each other.
+            <div class="caption">Get in touch.</div>
+        </div>
+        <Footer />
     </main>
 </Layout>
 
-<style></style>
+<style>
+    .message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 12px;
+        min-height: 40vh;
+        font-size: 30px;
+    }
+
+    .caption {
+        color: #8d8d8d;
+    }
+
+    @media (min-width: 640px) {
+        .message {
+            font-size: 38px;
+            padding: 0px 40px;
+        }
+    }
+</style>
