@@ -1,0 +1,55 @@
+---
+export interface Props {
+    title: string;
+    body: string;
+    image: string;
+}
+
+const { title, body, image } = Astro.props;
+---
+
+<div class="title-card">
+    <h2 style={`background-image:url(${image}) `}>
+        {title}
+    </h2>
+    <p>
+        {body}
+    </p>
+</div>
+
+<style>
+    .title-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 12px;
+        min-height: 65vh;
+    }
+
+    h2 {
+        color: white;
+        font-size: 30px;
+        max-width: 50vw;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    p {
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    @media (min-width: 640px) {
+        h2 {
+            font-size: 68px;
+        }
+
+        p {
+            font-size: 28px;
+            max-width: 50vw;
+        }
+    }
+</style>

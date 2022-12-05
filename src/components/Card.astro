@@ -1,12 +1,13 @@
 ---
 export interface Props {
     title: string;
+    caption?: string;
     body: string;
-    href: string;
+    href?: string;
     image: string;
 }
 
-const { href, title, body, image } = Astro.props;
+const { href, title, caption, body, image } = Astro.props;
 ---
 
 <div class="link-card">
@@ -14,21 +15,28 @@ const { href, title, body, image } = Astro.props;
         <h2>
             {title}
         </h2>
+        {caption && <div class="caption">{caption}</div>}
         <p>
             {body}
         </p>
     </div>
 
     <div class="center-image">
-        <a href={href}>
-            <img src={image} />
-        </a>
+        {
+            href ? (
+                <a href={href}>
+                    <img src={image} />
+                </a>
+            ) : (
+                <img src={image} />
+            )
+        }
     </div>
 </div>
 <style>
     .link-card {
         padding: 0px 12px;
-        margin-bottom: 30px;
+        margin-bottom: 45px;
     }
 
     .center-image {
@@ -40,8 +48,12 @@ const { href, title, body, image } = Astro.props;
         font-weight: 500;
     }
 
-    p {
+    p,
+    .caption {
         font-size: 20px;
+    }
+
+    p {
         color: #8d8d8d;
     }
 
@@ -66,7 +78,8 @@ const { href, title, body, image } = Astro.props;
             font-weight: 500;
         }
 
-        p {
+        p,
+        .caption {
             font-size: 28px;
         }
 
