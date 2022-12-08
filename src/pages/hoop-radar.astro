@@ -12,30 +12,104 @@ import Card from "../components/Card.astro";
         body="Hoop Radar is a passion project that my classmates and I were instructed to design during a course in University. Hoop Radar is an app that brings all things NBA to a central location."
         image="/temp-images/gradient1.jpg"
     />
-    <Card
-        title="Background"
-        caption="We wanted to provide a platform for basketball fans to consume the information they needed, in the most efficient manner. During our semester, we were guided through the different steps it takes to bring a product to life. "
-        body="Research, Ideation, and Refinement. Each of these three phases we learned and applied new principles to make meaningful progress in the product development."
-        image="/LotusMap.png"
-    />
+
+    <div class="link-card">
+        <div class="link-text">
+            <h2>Background</h2>
+            <div class="caption">
+                We wanted to provide a platform for basketball fans to consume
+                the information they needed, in the most efficient manner.
+                During our semester, we were guided through the different steps
+                it takes to bring a product to life.
+            </div>
+            <p class="caption black">
+                <b>Research, Ideation, and Refinement.</b>
+            </p>
+            <p>
+                Each of these three phases we learned and applied new principles
+                to make meaningful progress in the product development.
+            </p>
+        </div>
+
+        <div class="center-image">
+            <img src="/LotusMap.png" />
+        </div>
+    </div>
+
     <Card
         title="Research"
         body="Our research conducted in this phase started with our survey. We were able to determine the type of user that we wanted to target, as well as the common tendencies when it came to watching the NBA. After the survey and the findings were consolidated, we focused on a competitive analysis to pinpoint what features the we wanted to include, considering the competition in our field.Displayed below are some of the important statistics and takeaways that we kept in mind before moving forward with our project. "
-
         image="/temp-images/gradient1.jpg"
     />
     <Card
         title="Ideation"
         body="In our ideation phase we applied our research findings to define our target user. With the help of a few ideation tools that included a Lotus Map, competitive analysis, and the creation of low fidelity prototypes we were finally ready to begin our user testing phase. The problem we were out to solve with this project is that basketball fans have too many options when it comes to consuming content. Our goal is to develop a solution that brings all the benefits of those options into one place for basketball fans of all levels"
-
         image="/temp-images/gradient1.jpg"
     />
 
     <Card
         title="Refinement"
         body="Using all the findings in the ideation phase and the observations from our usability study, we were finally able to begin our final stage of prototyping and bringing our product to life."
-
         image="/temp-images/gradient1.jpg"
-        />
-
+    />
 </Layout>
+
+<style>
+    .link-card {
+        padding: 10px 12px;
+        margin-bottom: 45px;
+    }
+
+    .center-image {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    p,
+    .caption {
+        font-size: 20px;
+    }
+
+    .black {
+        color: black;
+    }
+
+    p {
+        color: #8d8d8d;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    @media (min-width: 640px) {
+        .link-card {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 40px;
+        }
+
+        .link-text {
+            max-width: 835px;
+        }
+
+        h2 {
+            font-size: 38px;
+            font-weight: 500;
+        }
+
+        p,
+        .caption {
+            font-size: 28px;
+        }
+
+        img {
+            max-width: 650px;
+        }
+    }
+</style>
