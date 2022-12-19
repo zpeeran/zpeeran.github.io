@@ -1,0 +1,107 @@
+---
+export interface Props {
+    title: string;
+    caption?: string;
+    body: string;
+    href?: string;
+    image?: string;
+    video?: string;
+    
+}
+
+const { href, title, caption, body, image, video } = Astro.props;
+---
+
+<div class="link-card">
+    <div class="link-text">
+        <h2>
+            {title}
+        </h2>
+        {caption && <div class="caption">{caption}</div>}
+
+        <p>
+            {body}
+        </p>
+    </div>
+
+    <div class="center-image">
+        {
+            href ? (
+                <a href={href}>
+                    <img src={image} />
+                </a>
+            ) : (
+                <img src={image} />
+            )
+        }
+    </div>
+</div>
+
+<style>
+    .link-card {
+        padding: 10px 12px;
+        margin-bottom: 45px;
+        
+    }
+
+    .center-image {
+        text-align: center;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    p,
+    .caption {
+        font-size: 16px;
+        
+    }
+
+    p {
+        color: #616161;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    video {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    @media (min-width: 640px) {
+        .link-card {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 40px;
+        }
+
+        .link-text {
+            max-width: 835px;
+        }
+
+        h2 {
+            font-size: 38px;
+            font-weight: 500;
+        }
+
+        p,
+        .caption {
+            font-size: 24px;
+            padding-right: 20px;
+        }
+
+        img {
+            max-width: 700px;
+        }
+
+        video {
+            max-width: 800px;
+        }
+    }
+</style>

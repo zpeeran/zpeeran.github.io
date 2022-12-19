@@ -11,6 +11,8 @@ import Card from "../components/Card.astro";
         title="Hoop Radar"
         body="Hoop Radar is a passion project that my classmates and I were instructed to design during a course in University. Hoop Radar is an app that brings all things NBA to a central location."
         image="/temp-images/gradient1.jpg"
+        role="UX Designer, Researcher, Prototyping. Duration - 6 Months."
+        desc="This is a speculative project."
     />
 
     <div class="link-card">
@@ -32,25 +34,31 @@ import Card from "../components/Card.astro";
         </div>
 
         <div class="center-image">
-            <img src="/LotusMap.png" />
+            <img src="/temp-images/gradient3.jpg"/>
         </div>
     </div>
 
     <Card
         title="Research"
-        body="Our research conducted in this phase started with our survey. We were able to determine the type of user that we wanted to target, as well as the common tendencies when it came to watching the NBA. After the survey and the findings were consolidated, we focused on a competitive analysis to pinpoint what features the we wanted to include, considering the competition in our field.Displayed below are some of the important statistics and takeaways that we kept in mind before moving forward with our project. "
-        image="/temp-images/gradient1.jpg"
+        body="Our research conducted in this phase started with our survey. We were able to determine the type of user that we wanted to target, as well as the common tendencies when it came to watching the NBA. After the survey and the findings were consolidated, we focused on a competitive analysis to pinpoint what features the we wanted to include, considering the competition in our field. Displayed are some of the important statistics and tools we used that we kept in mind before moving forward with our project. "
+        image="/temp-images/research-stats-hoop.png"
     />
+            
     <Card
         title="Ideation"
         body="In our ideation phase we applied our research findings to define our target user. With the help of a few ideation tools that included a Lotus Map, competitive analysis, and the creation of low fidelity prototypes we were finally ready to begin our user testing phase. The problem we were out to solve with this project is that basketball fans have too many options when it comes to consuming content. Our goal is to develop a solution that brings all the benefits of those options into one place for basketball fans of all levels"
-        image="/temp-images/gradient1.jpg"
+        image="/temp-images/hoop-radar-mockup.jpg"
     />
+
+        <div class="supp-images">
+            <img src="/lotusmap.png">
+            <img src="/companalysis.jpg">
+    </div>
 
     <Card
         title="Refinement"
         body="Using all the findings in the ideation phase and the observations from our usability study, we were finally able to begin our final stage of prototyping and bringing our product to life."
-        image="/temp-images/gradient1.jpg"
+        image="/temp-images/hoop-radar-mockup2.jpg"
     />
 </Layout>
 
@@ -112,6 +120,13 @@ import Card from "../components/Card.astro";
 
         img {
             max-width: 650px;
+        }
+
+        .supp-images{
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 40px;
+        
         }
     }
 </style>

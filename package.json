@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.14",
-    "astro": "^1.6.12"
+    "astro": "^1.6.12",
+    "rough-notation": "^0.5.1"
   }
 }

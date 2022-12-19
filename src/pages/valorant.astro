@@ -8,8 +8,10 @@ import Card from "../components/Card.astro";
 <Layout title="Zafar Peeran">
     <Nav />
     <ProjectIntro
-        title="HealthU"
-        body="Hoop Radar is a passion project that my classmates and I were instructed to design during a course in University. Hoop Radar is an app that brings all things NBA to a central location."
+        title="Toxicity"
+        body="Toxicity in gaming has been around since many of us have begun our journeys in games. A friend and I set out to improve the player experience of our favorite game, Valorant."
+        role="UX Designer and Research; Duration - 8 Months."
+        desc="This is a speculative project."
         image="/temp-images/gradient1.jpg"
     />
 
@@ -17,40 +19,63 @@ import Card from "../components/Card.astro";
         <div class="link-text">
             <h2>Background</h2>
             <div class="caption">
-                We wanted to provide a platform for basketball fans to consume
-                the information they needed, in the most efficient manner.
-                During our semester, we were guided through the different steps
-                it takes to bring a product to life.
+                We developed and sent out a survey that would help us pinpoint some of the issues that Valorant players were experiencing regularly, in an effort to create a more enjoyable environment for gamers. The findings from the survey showed us that the overall experience of Valorant can be defined in a coin flip. The experience you have is all dependent on the teammates you come across in games. Teammates can either be pleasant and helpful, or the opposite end of the spectrum and turn out to be toxic and detrimental to the user experience. In this study, we would like to explore and provide some recommendations that could alleviate the toxicity issue that is rampant in Valorant and create a more enjoyable experience for all gamers.
             </div>
-            <p class="caption black">
-                <b>Research, Ideation, and Refinement.</b>
-            </p>
             <p>
-                Each of these three phases we learned and applied new principles
-                to make meaningful progress in the product development.
+                Toxicity in gaming has been around since many of us have begun our journeys in games. It is an accurate assumption to say that almost all players have been exposed to some sort of toxicity in their game of choice. Throughout our playtime and experience with Valorant and other FPS titles, sexual harassment/gender and race/ethnicity based language are among the most common insults being said in matches. In a study conducted by the Anti-Defamation League, findings showed “over 80% of multiplayer gamers recently experienced some form of toxicity” and that “with over a tenth saying it resulted in depressive or suicidal thoughts and over 20% said it caused them to quit playing” <a href="https://msutoday.msu.edu/news/2021/faculty-voice-gaming-and-toxicity#:~:text=Toxicity%20in%20gaming%20is%20more,%2C%E2%80%9D%20can%20be%20quite%20effective."> (ADL)</a>. These statistics aren’t only for males, but for women as well, who are significantly more likely targets of toxicity and verbal abuse. “In addition to the psychological harm, studies suggest that such toxicity decreases women’s motivation to play video games in the future as well as to pursue technical career fields” (ADL). In addition to these findings, the results from our own survey showed that toxicity was a huge pain point of the player experience in Valorant. We ideated a few solutions that we believe would help the issue, as well as some other additions to the product that we believe would create a better Valorant experience.
             </p>
         </div>
 
+        
+
         <div class="center-image">
-            <img src="/LotusMap.png" />
+            <img src="/temp-images/gradient1.jpg" />
         </div>
     </div>
 
+    <div class="supp-images">
+        <img src="/lotusmap.png">
+        <img src="/companalysis.jpg">
+    </div>
+
     <Card
-        title="Research"
-        body="Our research conducted in this phase started with our survey. We were able to determine the type of user that we wanted to target, as well as the common tendencies when it came to watching the NBA. After the survey and the findings were consolidated, we focused on a competitive analysis to pinpoint what features the we wanted to include, considering the competition in our field.Displayed below are some of the important statistics and takeaways that we kept in mind before moving forward with our project. "
+        title="Feedback System"
+        body="Based on the results of our survey, toxic teammates are the most significant pain point in the player experience in Valorant. Punishing toxic teammates more than a ban or suspension was one of the most common comments we received in our survey. It's not possible to completely eliminate toxicity from any game, but we can develop a solution that encourages players to be respectful. Taking from Blizzard’s title Overwatch, they have a feedback system that is displayed with a badge that is visible to all players. After each match, the teammates have the ability to commend you for three different qualities; shot caller, good teammate, and sportsmanship. As you commend more and more players, your feedback level is increased and you are then matched up with players with similar badge levels and behavior history as you, based on teammate feedback. Implementing a system similar to this in Valorant to rate teammates after each match would help alleviate the “coin flip” of teammates in each ranked game. These commendations could be categorized as; communicative, sportsmanship, and cooperative. As it currently stands, the likelihood of getting a teammate with similar behavior as you is not very high. This system would increase that likelihood and also punish toxic teammates by placing them in lobbies and matches with players who have a similar behavior history as them."
         image="/temp-images/gradient1.jpg"
     />
+        
+    
+    
+        <div class="link-card">
+            <div class="link-text">
+                <h2>Feedback System</h2>
+                <div class="caption">
+                    One of the other pain points that stood out to us from the survey, was that Valorant users generally have negative experiences when it comes to smurfs. Smurfs are defined as users who create new accounts to play in lower ranks, for whatever reason they may have. This creates a fault in the competitive integrity of the game because you are matched against someone who is significantly above your current skill level. This is a large problem with many free-to-play titles because it is so easy to just create a new account without having to pay.
+                </div>
+                <p>
+                    One solution that has worked well for Counter-Strike: Global Offensive was creating prime accounts. Before CS:GO moved to a free-to-play model, the game was $15, and when the transition happened, the accounts that had paid previously were defined as “prime accounts”. You could also make your account prime by linking a phone number to verify it so that only one number was associated with each account. Prime accounts got a special matchmaking option to only play against other prime accounts. Implementing a way to verify accounts in Valorant would significantly decrease the number of smurfs in the lower ranks and create a better experience for players who are looking to improve.
+                </p>
+                <p>
+                    For our visual solution, we created two variants that indicate a verified account. The first option is a traditional verified checkmark, which is synonymous with other platforms and easily identifiable. The second option is taking the blank space on the player card and changing the color to a glowing green to symbolize verification. This second option is consistent with the theme of Valorant and its vibrancy as well as the character of gamers.
+                </p>
+            </div>
+    
+            <div class="feedback-image">
+                <img src="/temp-images/gradient1.jpg"/>
+            </div>
+        </div>
+
+
     <Card
-        title="Ideation"
-        body="In our ideation phase we applied our research findings to define our target user. With the help of a few ideation tools that included a Lotus Map, competitive analysis, and the creation of low fidelity prototypes we were finally ready to begin our user testing phase. The problem we were out to solve with this project is that basketball fans have too many options when it comes to consuming content. Our goal is to develop a solution that brings all the benefits of those options into one place for basketball fans of all levels"
+        title="Agent Select"
+        body="Using all the findings in the ideation phase and the observations from our usability study, we were finally able to begin our final stage of prototyping and bringing our product to life."
         image="/temp-images/gradient1.jpg"
     />
 
     <Card
-        title="Refinement"
-        body="Using all the findings in the ideation phase and the observations from our usability study, we were finally able to begin our final stage of prototyping and bringing our product to life."
-        image="/temp-images/gradient1.jpg"
+        title="Quality of Life"
+        body="hi there"
+        image="/temp-images/gradient2.jpg"
     />
 </Layout>
 
@@ -62,6 +87,12 @@ import Card from "../components/Card.astro";
 
     .center-image {
         text-align: center;
+        padding-top: 10px;
+    }
+
+    .feedback-image {
+        text-align: center;
+        padding-top: 10px;
     }
 
     h2 {
@@ -71,7 +102,7 @@ import Card from "../components/Card.astro";
 
     p,
     .caption {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .black {
@@ -93,6 +124,15 @@ import Card from "../components/Card.astro";
             justify-content: space-between;
             padding: 10px 40px;
         }
+        
+        .center-image{
+            padding-top: 200px;
+        }
+
+        .feedback-image {
+        text-align: center;
+        padding-top: 200px;
+    }
 
         .link-text {
             max-width: 835px;
@@ -105,11 +145,19 @@ import Card from "../components/Card.astro";
 
         p,
         .caption {
-            font-size: 28px;
+            font-size: 20px;
         }
 
         img {
-            max-width: 650px;
+            max-width: 800px;
+
+        }
+
+        .supp-images{
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 40px;
+        
         }
     }
 </style>

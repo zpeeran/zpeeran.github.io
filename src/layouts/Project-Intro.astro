@@ -3,9 +3,11 @@ export interface Props {
     title: string;
     body: string;
     image: string;
+    role?: string;
+    desc?: string;
 }
 
-const { title, body, image } = Astro.props;
+const { title, body, image, role, desc} = Astro.props;
 ---
 
 <div class="title-card">
@@ -14,6 +16,14 @@ const { title, body, image } = Astro.props;
     </h2>
     <p>
         {body}
+    </p>
+    
+    <p>
+       {role}
+    </p>
+    
+    <p>
+        <i> {desc} </i>
     </p>
 </div>
 
@@ -42,6 +52,7 @@ const { title, body, image } = Astro.props;
         max-width: 90vw;
     }
 
+
     @media (min-width: 640px) {
         h2 {
             font-size: 68px;
@@ -50,6 +61,10 @@ const { title, body, image } = Astro.props;
         p {
             font-size: 28px;
             max-width: 50vw;
+        }
+
+        i {
+            font-size: 22px;
         }
     }
 </style>
