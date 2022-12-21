@@ -6,158 +6,223 @@ import Card from "../components/Card.astro";
 ---
 
 <Layout title="Zafar Peeran">
-    <Nav />
-    <ProjectIntro
-        title="Toxicity"
-        body="Toxicity in gaming has been around since many of us have begun our journeys in games. A friend and I set out to improve the player experience of our favorite game, Valorant."
-        role="UX Designer and Research; Duration - 8 Months."
-        desc="This is a speculative project."
-        image="/temp-images/gradient1.jpg"
-    />
+  <Nav />
+  <ProjectIntro
+    title="Toxicity"
+    body="Toxicity in gaming has been around since many of us have begun our journeys in games. A friend and I set out to improve the player experience of our favorite game, Valorant."
+    role="UX Designer and Research; Duration - 8 Months."
+    desc="This is a speculative project."
+    image="/temp-images/gradient1.jpg"
+  />
 
-    <div class="link-card">
-        <div class="link-text">
-            <h2>Background</h2>
-            <div class="caption">
-                We developed and sent out a survey that would help us pinpoint some of the issues that Valorant players were experiencing regularly, in an effort to create a more enjoyable environment for gamers. The findings from the survey showed us that the overall experience of Valorant can be defined in a coin flip. The experience you have is all dependent on the teammates you come across in games. Teammates can either be pleasant and helpful, or the opposite end of the spectrum and turn out to be toxic and detrimental to the user experience. In this study, we would like to explore and provide some recommendations that could alleviate the toxicity issue that is rampant in Valorant and create a more enjoyable experience for all gamers.
-            </div>
-            <p>
-                Toxicity in gaming has been around since many of us have begun our journeys in games. It is an accurate assumption to say that almost all players have been exposed to some sort of toxicity in their game of choice. Throughout our playtime and experience with Valorant and other FPS titles, sexual harassment/gender and race/ethnicity based language are among the most common insults being said in matches. In a study conducted by the Anti-Defamation League, findings showed “over 80% of multiplayer gamers recently experienced some form of toxicity” and that “with over a tenth saying it resulted in depressive or suicidal thoughts and over 20% said it caused them to quit playing” <a href="https://msutoday.msu.edu/news/2021/faculty-voice-gaming-and-toxicity#:~:text=Toxicity%20in%20gaming%20is%20more,%2C%E2%80%9D%20can%20be%20quite%20effective."> (ADL)</a>. These statistics aren’t only for males, but for women as well, who are significantly more likely targets of toxicity and verbal abuse. “In addition to the psychological harm, studies suggest that such toxicity decreases women’s motivation to play video games in the future as well as to pursue technical career fields” (ADL). In addition to these findings, the results from our own survey showed that toxicity was a huge pain point of the player experience in Valorant. We ideated a few solutions that we believe would help the issue, as well as some other additions to the product that we believe would create a better Valorant experience.
-            </p>
-        </div>
-
-        
-
-        <div class="center-image">
-            <img src="/temp-images/gradient1.jpg" />
-        </div>
+  <div class="intro-card">
+    <div>
+      <h2 class="intro-title">Background</h2>
+      <p class="intro-paragraph">
+        We developed and sent out a survey that would help us pinpoint some of
+        the issues that Valorant players were experiencing regularly, in an
+        effort to create a more enjoyable environment for gamers. The findings
+        from the survey showed us that the overall experience of Valorant can be
+        defined in a coin flip. The experience you have is all dependent on the
+        teammates you come across in games. Teammates can either be pleasant and
+        helpful, or the opposite end of the spectrum and turn out to be toxic
+        and detrimental to the user experience. In this study, we would like to
+        explore and provide some recommendations that could alleviate the
+        toxicity issue that is rampant in Valorant and create a more enjoyable
+        experience for all gamers.
+      </p>
+      <p class="intro-paragraph">
+        Toxicity in gaming has been around since many of us have begun our
+        journeys in games. It is an accurate assumption to say that almost all
+        players have been exposed to some sort of toxicity in their game of
+        choice. Throughout our playtime and experience with Valorant and other
+        FPS titles, sexual harassment/gender and race/ethnicity based language
+        are among the most common insults being said in matches. In a study
+        conducted by the Anti-Defamation League, findings showed “over 80% of
+        multiplayer gamers recently experienced some form of toxicity” and that
+        “with over a tenth saying it resulted in depressive or suicidal thoughts
+        and over 20% said it caused them to quit playing” <a
+          href="https://msutoday.msu.edu/news/2021/faculty-voice-gaming-and-toxicity#:~:text=Toxicity%20in%20gaming%20is%20more,%2C%E2%80%9D%20can%20be%20quite%20effective."
+        >
+          (ADL)</a
+        >. These statistics aren’t only for males, but for women as well, who
+        are significantly more likely targets of toxicity and verbal abuse. “In
+        addition to the psychological harm, studies suggest that such toxicity
+        decreases women’s motivation to play video games in the future as well
+        as to pursue technical career fields” (ADL). In addition to these
+        findings, the results from our own survey showed that toxicity was a
+        huge pain point of the player experience in Valorant. We ideated a few
+        solutions that we believe would help the issue, as well as some other
+        additions to the product that we believe would create a better Valorant
+        experience.
+      </p>
     </div>
+  </div>
 
-    <div class="supp-images">
-        <img src="/lotusmap.png">
-        <img src="/companalysis.jpg">
+  <div class="intro-card">
+    <div class="intro-text">
+      <h2 class="title">Feedback System</h2>
+
+      <p class="intro-paragraph">
+        Based on the results of our survey, toxic teammates are the most
+        significant pain point in the player experience in Valorant. Punishing
+        toxic teammates more than a ban or suspension was one of the most common
+        comments we received in our survey. It's not possible to completely
+        eliminate toxicity from any game, but we can develop a solution that
+        encourages players to be respectful. Taking from Blizzard’s title
+        Overwatch, they have a feedback system that is displayed with a badge
+        that is visible to all players. After each match, the teammates have the
+        ability to commend you for three different qualities; shot caller, good
+        teammate, and sportsmanship. As you commend more and more players, your
+        feedback level is increased and you are then matched up with players
+        with similar badge levels and behavior history as you, based on teammate
+        feedback. Implementing a system similar to this in Valorant to rate
+        teammates after each match would help alleviate the “coin flip” of
+        teammates in each ranked game. These commendations could be categorized
+        as; communicative, sportsmanship, and cooperative. As it currently
+        stands, the likelihood of getting a teammate with similar behavior as
+        you is not very high. This system would increase that likelihood and
+        also punish toxic teammates by placing them in lobbies and matches with
+        players who have a similar behavior history as them.
+      </p>
     </div>
+  </div>
 
-    <Card
-        title="Feedback System"
-        body="Based on the results of our survey, toxic teammates are the most significant pain point in the player experience in Valorant. Punishing toxic teammates more than a ban or suspension was one of the most common comments we received in our survey. It's not possible to completely eliminate toxicity from any game, but we can develop a solution that encourages players to be respectful. Taking from Blizzard’s title Overwatch, they have a feedback system that is displayed with a badge that is visible to all players. After each match, the teammates have the ability to commend you for three different qualities; shot caller, good teammate, and sportsmanship. As you commend more and more players, your feedback level is increased and you are then matched up with players with similar badge levels and behavior history as you, based on teammate feedback. Implementing a system similar to this in Valorant to rate teammates after each match would help alleviate the “coin flip” of teammates in each ranked game. These commendations could be categorized as; communicative, sportsmanship, and cooperative. As it currently stands, the likelihood of getting a teammate with similar behavior as you is not very high. This system would increase that likelihood and also punish toxic teammates by placing them in lobbies and matches with players who have a similar behavior history as them."
-        image="/temp-images/gradient1.jpg"
-    />
-        
-    
-    
-        <div class="link-card">
-            <div class="link-text">
-                <h2>Feedback System</h2>
-                <div class="caption">
-                    One of the other pain points that stood out to us from the survey, was that Valorant users generally have negative experiences when it comes to smurfs. Smurfs are defined as users who create new accounts to play in lower ranks, for whatever reason they may have. This creates a fault in the competitive integrity of the game because you are matched against someone who is significantly above your current skill level. This is a large problem with many free-to-play titles because it is so easy to just create a new account without having to pay.
-                </div>
-                <p>
-                    One solution that has worked well for Counter-Strike: Global Offensive was creating prime accounts. Before CS:GO moved to a free-to-play model, the game was $15, and when the transition happened, the accounts that had paid previously were defined as “prime accounts”. You could also make your account prime by linking a phone number to verify it so that only one number was associated with each account. Prime accounts got a special matchmaking option to only play against other prime accounts. Implementing a way to verify accounts in Valorant would significantly decrease the number of smurfs in the lower ranks and create a better experience for players who are looking to improve.
-                </p>
-                <p>
-                    For our visual solution, we created two variants that indicate a verified account. The first option is a traditional verified checkmark, which is synonymous with other platforms and easily identifiable. The second option is taking the blank space on the player card and changing the color to a glowing green to symbolize verification. This second option is consistent with the theme of Valorant and its vibrancy as well as the character of gamers.
-                </p>
-            </div>
-    
-            <div class="feedback-image">
-                <img src="/temp-images/gradient1.jpg"/>
-            </div>
-        </div>
+  <div class="supp-images">
+    <div>
+      <img src="/temp-images/feedback-badges.png" />
+      <img src="/temp-images/badge-ingame.png" />
+      <img src="/temp-images/feedback-options.png" />
+      <img src="/temp-images/feedback-options-2.png" />
+    </div>
+  </div>
 
+  <div class="intro-card">
+    <div class="intro-text">
+      <h2 class="title">Account Verification</h2>
+      <p class="intro-paragraph">
+        One of the other pain points that stood out to us from the survey, was
+        that Valorant users generally have negative experiences when it comes to
+        smurfs. Smurfs are defined as users who create new accounts to play in
+        lower ranks, for whatever reason they may have. This creates a fault in
+        the competitive integrity of the game because you are matched against
+        someone who is significantly above your current skill level. This is a
+        large problem with many free-to-play titles because it is so easy to
+        just create a new account without having to pay.
+        <br />
+        <br />One solution that has worked well for Counter-Strike: Global
+        Offensive was creating prime accounts. Before CS:GO moved to a
+        free-to-play model, the game was $15, and when the transition happened,
+        the accounts that had paid previously were defined as “prime accounts”.
+        You could also make your account prime by linking a phone number to
+        verify it so that only one number was associated with each account.
+        Prime accounts got a special matchmaking option to only play against
+        other prime accounts. Implementing a way to verify accounts in Valorant
+        would significantly decrease the number of smurfs in the lower ranks and
+        create a better experience for players who are looking to improve.
+        <br />
+        <br />For our visual solution, we created two variants that indicate a
+        verified account. The first option is a traditional verified checkmark,
+        which is synonymous with other platforms and easily identifiable. The
+        second option is taking the blank space on the player card and changing
+        the color to a glowing green to symbolize verification. This second
+        option is consistent with the theme of Valorant and its vibrancy as well
+        as the character of gamers.
+      </p>
 
-    <Card
-        title="Agent Select"
-        body="Using all the findings in the ideation phase and the observations from our usability study, we were finally able to begin our final stage of prototyping and bringing our product to life."
-        image="/temp-images/gradient1.jpg"
-    />
+      <div class="center">
+        <img src="/temp-images/verification.png" />
+      </div>
+    </div>
+  </div>
 
-    <Card
-        title="Quality of Life"
-        body="hi there"
-        image="/temp-images/gradient2.jpg"
-    />
+  <div class="intro-card">
+    <div class="intro-text">
+      <h2 class="title">Agent Select</h2>
+      <p class="intro-paragraph">
+        Agents are an integral part of Valorant, they are what separate the game
+        from other FPS’s in the category. The current model of selecting an
+        agent needs some work. Our survey respondents detailed that
+        “instalockers” and not having a fair chance to select an agent of their
+        choosing because of factors out of their control creates a negative
+        experience for them. Players that have more advanced hardware and in
+        turn are loading in faster and immediately locking an agent creates a
+        toxic environment for the other players on the team as it can lead to an
+        unfavorable composition. This also causes some toxic individuals to
+        become petty and start participating in behavior that is detrimental to
+        the team and the game. We also observed from our respondents that it
+        feels as if they are being forced to play an agent they aren’t confident
+        with because they loaded into the lobby last.
+        <br />
+        <br />Our solution is to implement a waiting period prior to selecting
+        agents. This would ideally be per team, and as each of your teammates
+        load in, the player icons will fill, and once everyone has loaded in a
+        countdown will begin to select agents. Allowing players with less
+        powerful computers and slower internet speeds to connect while given
+        equal opportunity to select any agent would help alleviate the
+        instalocking issue in Valorant, as well as granting an added discussion
+        period before selecting.
+      </p>
+
+      <div class="center">
+        <img src="/temp-images/agent-select.png" />
+      </div>
+    </div>
+  </div>
+
+  <div class="intro-card">
+    <div class="intro-text">
+      <h2 class="title">Quality of Life</h2>
+      <p class="intro-paragraph">
+        In our survey, one of the questions asked to respondents was “During a
+        Valorant session, what features do you use the most? Are there any
+        features that you feel are missing?”. In addition to addressing the main
+        pain points, we wanted to attempt to develop some quality of life (QOL)
+        changes that would create a better experience for Valorant players. The
+        top three responses were a way to spectate friends natively, theater
+        mode, and more detailed post-match statistics. While developing these
+        are outside the scope of our study, we thought it would be worthwhile to
+        address them
+        <br />
+        <br />OSpectating and watching your friends play a match brings so much
+        excitement to everyone involved. We are currently in the age of screen
+        sharing in a Discord server for others to watch, but what if there was a
+        way to join your friend’s lobby while they were in a game and be able to
+        watch their match from their perspective?
+        <br />
+        <br />Theater mode has been on the wish list of Valorant users since the
+        game's inception. Having the option to go back and watch round replays
+        to see where you made mistakes and had big highlight moments is
+        something that a large percentage of the player base has been wanting
+        for a long time. A feature like this would apply to players of all
+        levels; competitive players, casuals, and new users
+        <br />
+        <br />Detailed match statistics would be a well-received feature for
+        individuals who are looking to improve competitively and fix micro
+        mistakes. Tracker.gg is an extremely popular site that logs various
+        statistics that aren’t currently visible to the user natively in
+        Valorant. Bringing some of these statistics to the post-match report or
+        including them in a separate section when looking at a user's career
+        would be a possible solution. This would allow players to have an
+        updated, in-depth analysis of their statistics quickly, without leaving
+        the Valorant client.
+      </p>
+    </div>
+  </div>
 </Layout>
 
 <style>
-    .link-card {
-        padding: 10px 12px;
-        margin-bottom: 45px;
-    }
+  .supp-images {
+    display: flex;
+    padding-left: 80px;
+    padding-bottom: 40px;
+  }
 
-    .center-image {
-        text-align: center;
-        padding-top: 10px;
-    }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
 
-    .feedback-image {
-        text-align: center;
-        padding-top: 10px;
-    }
-
-    h2 {
-        font-size: 30px;
-        font-weight: 500;
-    }
-
-    p,
-    .caption {
-        font-size: 16px;
-    }
-
-    .black {
-        color: black;
-    }
-
-    p {
-        color: #8d8d8d;
-    }
-
-    img {
-        max-width: 100%;
-        border-radius: 10px;
-    }
-
-    @media (min-width: 640px) {
-        .link-card {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 40px;
-        }
-        
-        .center-image{
-            padding-top: 200px;
-        }
-
-        .feedback-image {
-        text-align: center;
-        padding-top: 200px;
-    }
-
-        .link-text {
-            max-width: 835px;
-        }
-
-        h2 {
-            font-size: 38px;
-            font-weight: 500;
-        }
-
-        p,
-        .caption {
-            font-size: 20px;
-        }
-
-        img {
-            max-width: 800px;
-
-        }
-
-        .supp-images{
-            display: flex;
-            justify-content: space-evenly;
-            padding-bottom: 40px;
-        
-        }
-    }
+  @media (min-width: 640px) {
+  }
 </style>

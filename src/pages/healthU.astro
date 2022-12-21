@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../layouts/Nav.astro";
 import ProjectIntro from "../layouts/Project-Intro.astro";
-import Card from "../components/Card.astro";
 ---
 
 <Layout title="Zafar Peeran">
@@ -11,7 +10,7 @@ import Card from "../components/Card.astro";
     title="HealthU"
     body="HealthU is a service that aims to raise the priority of students' mental health and wellbeing in higher education. As part of a course curriculum, I was tasked with redesigning or creating a service that solves a problem for students of higher education."
     image="/temp-images/gradient1.jpg"
-    role="UX Designer and Research; Duration - 2 Months."
+    role="UX Designer and Research; Duration - 4 Months."
     desc="This is a speculative project."
   />
 
@@ -42,7 +41,9 @@ import Card from "../components/Card.astro";
         students to take advantage of. The University of Minnesota - Twin Cities
         does a great job in advertising and making sure that students are aware
         of these resources at any time they see fit, but there are some flaws.
-        The main problem being that students find <span id="advantage"
+        The main problem being that students find <span
+          class="notation"
+          data-notation-type="highlight-1"
           >taking advantage of these resources difficult.</span
         > In this study, I set out to develop a solution that bridges the gap between
         the resources available and the students in need. Positive mental health
@@ -57,127 +58,51 @@ import Card from "../components/Card.astro";
     </div>
   </div>
 
-  <Card
-    title="Research"
-    body="I sent out a survey to students at the University of Minnesota - Twin Cities in an effort to gain a more accurate understanding of how students feel about the resources available to them. Of the 20 respondents, 75% of students stated that they experienced an increased level of stress and anxiety when their course load was increased. Only 20% of students stated they sought the resources available to them from the University. 65% of students stated that they have stayed up all night at least twice a week in order to complete assignments. 25% of students stated that they felt embarrassed seeking out these resources. These metrics were the most important to keep in mind when developing a solution for students struggling with mental health."
-    image="/temp-images/mockup2.jpg"
-  />
+  <div class="link-card">
+    <div class="link-text">
+      <h2 class="title">Research</h2>
 
-  <Card
-    title="Solution"
-    body="Taking into consideration the results of the survey, I set a few goals for myself that I wanted to include in a solution to the problem. I wanted to put an emphasis on how important maintaining mental health was by implementing a daily check up and incentivizing daily activities that have proven to improve the mental wellbeing of individuals. Creating a direct and instant point of contact for students to get in touch with their professors, instructors, and mental health professionals in case of an emergency was a feature that would decrease the feeling of embarassment in students seeking extensions or help due to mental health complications."
-    image="/temp-images/mockup1.jpg"
-  />
+      <p class="body">
+        I sent out a survey to students at the University of Minnesota - Twin
+        Cities in an effort to gain a more accurate understanding of how
+        students feel about the resources available to them. Of the 20
+        respondents, 75% of students stated that they experienced an increased
+        level of stress and anxiety when their course load was increased. Only
+        20% of students stated they sought the resources available to them from
+        the University. <span class="notation" data-notation-type="highlight-2">
+          65% of students stated that they have stayed up all night at least
+          twice a week in order to complete assignments.
+        </span> 25% of students stated that they felt embarrassed seeking out these
+        resources. These metrics were the most important to keep in mind when developing
+        a solution for students struggling with mental health
+      </p>
+    </div>
+
+    <div>
+      <img src="/temp-images/mockup2.jpg" />
+    </div>
+  </div>
+
+  <div class="link-card">
+    <div class="link-text">
+      <h2 class="title">Solution</h2>
+
+      <p class="body">
+        Taking into consideration the results of the survey, I set a few goals
+        for myself that I wanted to include in a solution to the problem. I
+        wanted to put an emphasis on how important maintaining mental health was
+        by implementing a daily check up and incentivizing daily activities that
+        have proven to improve the mental wellbeing of individuals. Creating a
+        direct and instant point of contact for students to get in touch with
+        their professors, instructors, and mental health professionals in case
+        of an emergency was a feature that would decrease the feeling of
+        embarassment in students seeking extensions or help due to mental health
+        complications.
+      </p>
+    </div>
+
+    <div>
+      <img src="/temp-images/mockup1.jpg" />
+    </div>
+  </div>
 </Layout>
-
-<style>
-  .link-card, .intro-card {
-    padding: 10px 12px;
-    margin-bottom: 45px;
-  }
-
-  .center-image {
-    text-align: center;
-  }
-
-  h2.title {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 500;
-  }
-
-  p.body,
-  .caption {
-    font-size: 16px;
-  }
-
-  p.body {
-    color: #616161;
-  }
-
-  img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-
-  h2.intro-title {
-    font-size: 30px;
-    font-weight: 500;
-  }
-
-  p.intro-paragraph {
-    font-size: 16px;
-    color: #000000;
-  }
-
-  @media (min-width: 640px) {
-
-    h2.intro-title {
-      margin: 0;
-      font-size: 38px;
-      font-weight: 500;
-    }
-
-    p.intro-paragraph {
-      font-size: 28px;
-    }
-
-    .link-card, .intro-card {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 40px;
-    }
-
-    .link-text {
-      max-width: 835px;
-    }
-
-    h2.title {
-      font-size: 38px;
-      font-weight: 500;
-    }
-
-    p.body,
-    .caption {
-      font-size: 24px;
-      padding-right: 20px;
-    }
-
-    img {
-      max-width: 700px;
-    }
-  }
-</style>
-
-<script type="module">
-  import { annotate } from "https://unpkg.com/rough-notation?module";
-
-  // const n1 = document.querySelector('em');
-  // const n2 = document.querySelector('strong');
-  // const n3 = document.querySelector('h1');
-  const n4 = document.querySelector("#advantage");
-  const n5 = document.querySelector("#intro");
-
-  // const a1 = annotate(n1, { type: 'underline', color: 'blue' });
-  // const a2 = annotate(n2, { type: 'circle', color: 'red', padding: 10 });
-  // const a3 = annotate(n3, { type: 'box', color: 'orange' });
-  const a4 = annotate(n4, {
-    type: "highlight",
-    color: "yellow",
-    iterations: 1,
-    multiline: true,
-  });
-  const a5 = annotate(n5, {
-    type: "bracket",
-    color: "red",
-    padding: [2, 10],
-    brackets: ["left", "right"],
-    strokeWidth: 3,
-  });
-
-  // a1.show();
-  // a2.show();
-  // a3.show();
-  a4.show();
-  a5.show();
-</script>
