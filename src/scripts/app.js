@@ -5,24 +5,28 @@ import { annotate } from "https://unpkg.com/rough-notation?module";
       "highlight-1": {
         type: "highlight",
         color: "#fcc2d2",
-        iterations: 4,
+        iterations: 2,
         multiline: true,
         animate: true,
-        animationDuration: 2000,
+        animationDuration: 3000,
+      
+        
       },
       "highlight-2": {
         type: "highlight",
-        color: "orange",
-        iterations: 4,
+        color: "yellow",
+        iterations: 1,
         multiline: true,
         animate: true,
+        animationDuration: 3000,
       },
       underline: {
         type: "underline",
-        color: "yellow",
+        color: "red",
         iterations: 4,
         multiline: true,
         animate: true,
+        padding: 1,
       },
       box: {
         type: "box",
@@ -30,11 +34,12 @@ import { annotate } from "https://unpkg.com/rough-notation?module";
         iterations: 2,
         multiline: true,
         animate: true,
+        padding: 1,
       },
       circle: {
         type: "circle",
-        color: "green",
-        iterations: 1,
+        color: "red",
+        iterations: 2,
         multiline: true,
         animate: true,
       },
@@ -55,9 +60,9 @@ import { annotate } from "https://unpkg.com/rough-notation?module";
       bracket: {
         type: "bracket",
         brackets: ["left", "right"],
-        color: "blue",
-        iterations: 2,
-        multiline: true,
+        color: "red",
+        iterations: 1,
+        multiline: false,
         animate: true,
       },
     };
