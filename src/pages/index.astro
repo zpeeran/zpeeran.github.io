@@ -6,54 +6,53 @@ import IntroCard from "../components/IntroCard.astro";
 ---
 
 <Layout title="Zafar Peeran">
-  <main>
-    <Intro />
-    <div id="Projects">
-      <IntroCard
-        href="/healthU"
-        title="HealthU"
-        body="Positive mental health and wellbeing is critical to a student's success in higher education."
-        image="/temp-images/healthu-thumbnail.png"
-      />
-      <IntroCard
-        href="/valorant"
-        title="Toxicity - A Study"
-        body="To design a more user centered Valorant experience."
-        image="/temp-images/thumbnail-valorant.png"
-      />
-      <IntroCard
-        href="/hoop-radar"
-        title="Hoop Radar"
-        body="In an effort to create a central place for basketball fans to consume all things NBA."
-        image="/temp-images/thumbnail-hoop.jpg"
-      />
-    </div>
-    <div class="message">
-      Let's get to know each other.
-      <div class="caption">Get in touch.</div>
-    </div>
-    <Footer />
-  </main>
+    <main>
+        <Intro />
+        <div id="Projects">
+            <IntroCard
+                href="/healthU"
+                title="HealthU"
+                body="Positive mental health and wellbeing is critical to a student's success in higher education."
+                image="/temp-images/healthu-thumbnail.png"
+            />
+            <IntroCard
+                href="/valorant"
+                title="Toxicity - A Study"
+                body="To design a more user centered Valorant experience."
+                image="/temp-images/thumbnail-valorant.png"
+            />
+            <IntroCard
+                href="/hoop-radar"
+                title="Hoop Radar"
+                body="In an effort to create a central place for basketball fans to consume all things NBA."
+                image="/temp-images/thumbnail-hoop.jpg"
+            />
+        </div>
+        <div class="message">
+            Let's get to know each other.
+            <div class="caption">Get in touch.</div>
+        </div>
+    </main>
 </Layout>
 
 <style>
-  .message {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px 12px;
-    min-height: 40vh;
-    font-size: 30px;
-  }
-
-  .caption {
-    color: #8d8d8d;
-  }
-
-  @media (min-width: 640px) {
     .message {
-      font-size: 38px;
-      padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 12px;
+        min-height: 40vh;
+        font-size: 30px;
     }
-  }
+
+    .caption {
+        color: #8d8d8d;
+    }
+
+    @media (min-width: 640px) {
+        .message {
+            font-size: 38px;
+            padding: 0px 40px;
+        }
+    }
 </style>
